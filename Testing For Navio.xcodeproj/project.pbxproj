@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		B36FC0AD2E2404A500DF5896 /* Navio in Frameworks */ = {isa = PBXBuildFile; productRef = B36FC0AC2E2404A500DF5896 /* Navio */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		B361B9C42E23FF470031A8D3 /* Testing For Navio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Testing For Navio.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B36FC0AD2E2404A500DF5896 /* Navio in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = "Testing For Navio";
 			packageProductDependencies = (
+				B36FC0AC2E2404A500DF5896 /* Navio */,
 			);
 			productName = "Testing For Navio";
 			productReference = B361B9C42E23FF470031A8D3 /* Testing For Navio.app */;
@@ -94,6 +100,9 @@
 			);
 			mainGroup = B361B9BB2E23FF470031A8D3;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				B36FC0AB2E2404A500DF5896 /* XCRemoteSwiftPackageReference "Navio" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = B361B9C52E23FF470031A8D3 /* Products */;
 			projectDirPath = "";
@@ -324,6 +333,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B36FC0AB2E2404A500DF5896 /* XCRemoteSwiftPackageReference "Navio" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/HtetAungShine6/Navio.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B36FC0AC2E2404A500DF5896 /* Navio */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B36FC0AB2E2404A500DF5896 /* XCRemoteSwiftPackageReference "Navio" */;
+			productName = Navio;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B361B9BC2E23FF470031A8D3 /* Project object */;
 }

@@ -6,16 +6,25 @@
 //
 
 import SwiftUI
+import Navio
 
 struct ContentView: View {
+    
+    @Navio<AppRoute> var navio
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavioView(navio) {
+            HomeView(coordinator: navio)
+        } route: { route in
+            switch route {
+            case .home:
+                HomeView(coordinator: navio)
+            case .profile(let name):
+                ProfileView(name: name, coordinator: navio)
+            case .settings:
+                SettingView(coordinator: navio)
+            }
         }
-        .padding()
     }
 }
 

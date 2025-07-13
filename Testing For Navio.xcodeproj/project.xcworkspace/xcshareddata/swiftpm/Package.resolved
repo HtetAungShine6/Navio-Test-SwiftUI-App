@@ -1,0 +1,15 @@
+{
+  "originHash" : "eb590742949acb068ef0acc0a8e05ca1479f3d1e85467d8245c7140b481ab997",
+  "pins" : [
+    {
+      "identity" : "navio",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/HtetAungShine6/Navio.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "8d07b1597863ce81dacde09186245a18e27364dd"
+      }
+    }
+  ],
+  "version" : 3
+}
