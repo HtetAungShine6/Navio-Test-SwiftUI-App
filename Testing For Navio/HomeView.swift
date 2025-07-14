@@ -10,7 +10,7 @@ import Navio
 
 struct HomeView: View {
     
-    let coordinator: NavioCoordinator<AppRoute>
+    let coordinator: AppCoordinator
     
     var body: some View {
         VStack {

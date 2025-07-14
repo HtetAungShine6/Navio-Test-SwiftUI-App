@@ -15,7 +15,7 @@ struct ContentView: View {
     var body: some View {
         NavioView(navio) {
             HomeView(coordinator: navio)
-        } route: { route in
+        } route: { (route: AppRoute) in
             switch route {
             case .home:
                 HomeView(coordinator: navio)
